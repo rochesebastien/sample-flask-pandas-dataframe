@@ -1,6 +1,6 @@
 FROM python:3.10.1-slim-buster
 
-RUN apt-get update && apt-get install -y netcat
+RUN apt-get update 
 
 WORKDIR /flask_fil_rouge
 COPY . /flask_fil_rouge
