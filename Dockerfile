@@ -6,7 +6,10 @@ WORKDIR /flask_fil_rouge
 COPY . /flask_fil_rouge
 
 RUN pip install --upgrade pip
+# remove the virtual environment if it exists
 RUN rm -rf venv
+# remove the db if it exists
+RUN rm -rf instance
 RUN python3 -m venv venv
 RUN /bin/bash -c "source venv/bin/activate" && \
     pip install -r requirements.txt 
