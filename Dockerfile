@@ -20,4 +20,7 @@ RUN /bin/sh db_init.sh
 EXPOSE 5000
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000", "--debug"]
 
-# docker run -p 31201:5000 flask_fil_rouge
+#To build the image
+# docker build -t flask_fil_rouge .
+#To run the image
+# docker run -d -p 31201:5000 flask_fil_rouge
