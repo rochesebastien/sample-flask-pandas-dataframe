@@ -119,7 +119,21 @@ docker push rsebastien/flask-panda
 
 ![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/docker-hub.png)
 
----
+# Tests unitaires 
+
+Pour les tests unitaires, il faut utiliser jmeter et faire ceci :   
+![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jmeter0.png)
+
+Ensuite on rentre nos variables comme ceci : 
+![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jmeter3.png)
+
+On les rentre ici : 
+![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jmeter2.png)
+
+Et on vérifie nos conditions de test (ici si la valeur est présente sur la page ): 
+![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jmeter2.png)
+
+Et on export et save le fichier dans notre repo sous le nom : `flask_pandas_test_plan.jmx`
 
 # Automatisation des déploiments 
 
