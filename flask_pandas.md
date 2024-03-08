@@ -93,7 +93,38 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
     Vous devriez voir l'application Flask en cours d'exécution.
 
-----
+## Le dockerfile 
+
+```dockerfile
+FROM python:3.10.1-slim-buster
+
+RUN apt-get update 
+
+WORKDIR /flask_fil_rouge
+COPY . /flask_fil_rouge #copy the directory 
+
+RUN pip install --upgrade pip
+# remove the virtual environment if it exists
+RUN rm -rf venv
+# remove the db if it exists
+RUN rm -rf instance
+
+#python virtual env init
+RUN python3 -m venv venv
+RUN /bin/bash -c "source venv/bin/activate" && \
+    pip install -r requirements.txt 
+
+# Flask var
+ENV FLASK_APP=app.py
+
+# make sh script executable
+RUN chmod +x db_init.sh 
+RUN /bin/sh db_init.sh
+
+EXPOSE 5000 #open the port
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000", "--debug"]
+
+````
 
 ## Dockerhub : 
 
