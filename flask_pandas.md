@@ -6,7 +6,7 @@ Ceci est le fichier markdown pour l'installation et le lancement du project fil 
 
 Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
-- Python (version 3.10.1 ou supérieure)
+- Python
 - Docker (si vous souhaitez utiliser Docker)
 
 ## Installation (local)
@@ -76,13 +76,13 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 1. Construisez l'image Docker :
 
     ```bash
-    docker build -t flask_pandas .
+    docker build -t flask-pandas .
     ```
 
 2. Démarrez un conteneur Docker à partir de l'image :
 
     ```bash
-    docker run -d -p 31201:5000 flask_pandas
+    docker run -d -p 31201:5000 flask-pandas
     ```
 
 3. Accédez à l'URL suivante dans votre navigateur :
@@ -94,4 +94,17 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
     Vous devriez voir l'application Flask en cours d'exécution.
 
 ----
+
+## Dockerhub : 
+
+L'image de ce projet est disponible ici : https://hub.docker.com/repository/docker/rsebastien/flask-pandas/general
+
+Pour la récupérer vous pouvez simple la pull : 
+```
+docker pull rsebastien/flask-pandas
+```
+
+
+---
+
 2024 - Roche Sébastien 
