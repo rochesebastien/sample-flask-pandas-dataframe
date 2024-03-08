@@ -76,13 +76,13 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 1. Construisez l'image Docker :
 
     ```bash
-    docker build -t flask_fil_rouge .
+    docker build -t flask_pandas .
     ```
 
 2. Démarrez un conteneur Docker à partir de l'image :
 
     ```bash
-    docker run -p 31201:5000 flask_fil_rouge
+    docker run -d -p 31201:5000 flask_pandas
     ```
 
 3. Accédez à l'URL suivante dans votre navigateur :

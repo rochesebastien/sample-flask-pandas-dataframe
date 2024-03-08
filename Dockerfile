@@ -21,6 +21,6 @@ EXPOSE 5000
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000", "--debug"]
 
 #To build the image
-# docker build -t flask_fil_rouge .
+# docker build -t flask_pandas .
 #To run the image
-# docker run -d -p 31201:5000 flask_fil_rouge
+# docker run -d -p 31201:5000 flask_pandas
