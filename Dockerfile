@@ -6,6 +6,7 @@ WORKDIR /flask_fil_rouge
 COPY . /flask_fil_rouge
 
 RUN pip install --upgrade pip
+RUN rm -rf venv
 RUN python3 -m venv venv
 RUN /bin/bash -c "source venv/bin/activate" && \
     pip install -r requirements.txt 
