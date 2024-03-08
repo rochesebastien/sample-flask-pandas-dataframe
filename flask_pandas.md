@@ -220,6 +220,13 @@ Nous allons mettre en place le déploiment automatique avec jenkins. Pour ce fai
 Voici le résultat final, un pipeline fonctionnel : 
     ![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jenkins2.png) 
 
+
+# Jetbrains IDE
+
+Vous pouvez voir et intéragir avec vos jobs avec le plugin Jenkins sur les editeurs de la suite Jetbrains :
+
+![Flask Pandas Dataframe - media file.](https://raw.githubusercontent.com//rochesebastien/sample-flask-pandas-dataframe/main/media/jetbrains.png)
+
 ----
 
 
