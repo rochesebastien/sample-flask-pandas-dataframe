@@ -2,7 +2,7 @@
 
 Ceci est le fichier markdown pour l'installation et le lancement du project fil rouge. Ce projet est fait dans le cadre du cours de CI/CD de Livecampus.
 
-## Prérequis (local)
+## Prérequis
 
 Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
@@ -66,7 +66,7 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 2. Accédez à l'URL suivante dans votre navigateur :
 
     ```
-    http://localhost:5000
+    http://ip_machine:31201
     ```
 
     Vous devriez voir l'application Flask en cours d'exécution.
@@ -76,13 +76,13 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 1. Construisez l'image Docker :
 
     ```bash
-    docker build -t flask-pandas .
+    docker build -t flask-panda .
     ```
 
 2. Démarrez un conteneur Docker à partir de l'image :
 
     ```bash
-    docker run -d -p 31201:5000 flask-pandas
+    docker run -d -p 31201:5000 flask-panda
     ```
 
 3. Accédez à l'URL suivante dans votre navigateur :
@@ -101,9 +101,23 @@ L'image de ce projet est disponible ici : https://hub.docker.com/repository/dock
 
 Pour la récupérer vous pouvez simple la pull : 
 ```
-docker pull rsebastien/flask-pandas
+docker pull rsebastien/flask-panda
 ```
 
+Pour mettre l'image en ligne sur mon repository dockerhub, j'ai executé cette suite de commande 
+( après avoir  [build l'image](#Utilisation-avec-Docker), et s')
+
+- Tag l'image : 
+
+```
+docker tag flask-panda rsebastien/flask-panda
+```
+- Push l'image sur Dockerhub :
+```
+docker push rsebastien/flask-panda
+```
+
+![Flask Pandas Dataframe - media file.](https://github.com/rochesebastien/sample-flask-pandas-dataframe/main/media/docker-hub.png)
 
 ---
 

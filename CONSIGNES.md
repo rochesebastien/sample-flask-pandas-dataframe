@@ -17,6 +17,6 @@ Vous devez compléter le projet github existant, en précisant votre demarche po
 - [x] en dehors de jenkins, sur votre vm google, creez une image **flask-panda**. Mettre l'image dans le repository docker hub 
 - [x] en dehors de jenkins, sur votre vm google,  faire une docker run et verifier que l'application est disponible sur le port 31201.
 - [ ] dans jenkins creez un job **flask-panda-jmeter**, creer un test plan pour verifier si l'application affiche des data.
-- [ ] chainer les jobs jenkins pour faire un pipeline graphique
-- [ ] mettre a jour le jenkins plugin de goland pour lancer des build depuis votre IDE goland
-- [ ] mettre un webhook dans votre projet github, pour demarrer automatiquement votre ci/cd a chaque commit.
+- [x] chainer les jobs jenkins pour faire un pipeline graphique
+- [x] mettre a jour le jenkins plugin de goland pour lancer des build depuis votre IDE goland
+- [x] mettre un webhook dans votre projet github, pour demarrer automatiquement votre ci/cd a chaque commit.
